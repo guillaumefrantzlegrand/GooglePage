@@ -1,0 +1,178 @@
+/* Feuille de style page accueil google*/
+
+body
+{
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 13px;
+	color: #ffffff;
+	margin:0;
+	padding: 0;
+}
+
+.page /*ajout flex pour remplir page */
+{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+header nav /* blocs une seule ligne */
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin: 20px 12px;
+ }
+
+header nav div /* alignement des blocs gmail, image, carré gris et connexion*/
+ {
+ 	margin: 5px 10px;
+ 	text-align: center;
+ }
+
+header nav div img /*alignement carré gris- connexion*/
+{
+	margin-top: 5px;
+	align-items: baseline
+}
+
+#links_navigation_menu /*alignement gmail - bloc gris - connexion*/
+{
+	display: flex;
+	align-items: baseline;
+
+}
+ header nav div a /* mise en forme des textes bloc gmail & image*/
+ {
+ 	text-decoration: none;
+ 	color: #4D4D4D;
+ }
+
+ header nav div a:hover /*mise en forme des textes bloc gmail et image - survol*/
+ {
+ 	text-decoration: underline;
+
+ }
+
+ button /*mis en forme du connexion*/
+ {
+ 	background-color: #4885ed;
+ 	color: white;
+ 	padding: 8px;
+ 	width: 100px;
+ 	font-size: 13px;
+ 	font-weight: bold;
+ 	border-radius: none;
+ 	border: none;	
+ }
+
+ main /*alignement des blocs dans la section*/
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+}
+
+main div /*ajout de marges entre les blocs de la section*/
+{
+	margin: 15px;
+}
+
+input /*taille et mise en transparence du formulaire de recherche*/
+{
+	width: 400px;
+	height: 30px;
+	border: none;
+	background-color: transparent; 
+}
+
+
+#search_bar /*barre de recherche, arrondi + micro*/
+{
+	border: 1px solid #DCDCDC;
+	box-shadow: 0px 2px 2px #D3D3D3;
+	min-width: 480px;
+	max-width: 600px;
+	height: 43px;
+	border-radius: 100px;
+	display: flex;
+	
+	align-items: center;
+}
+
+#boutons_recherche /*alignement des blocs boutons de recherche google*/
+{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+
+.recherche_google, .chance /*boutons recherches*/
+{
+	font-family: Arial, Helvetica, sans-serif;
+	width: 150px;
+	height: 38px;
+	border: none;
+	margin: 0px 5px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+	color: #808080; 
+	border-radius: 2px;
+	background-color: #F4F4F4;
+}
+
+.recherche_google:hover, .chance:hover /*surbrillant - survol*/
+{
+	color: #4D4D4D;
+	border: 1px solid #DCDCDC;
+}
+
+#France /*mise en forme et alignement bloc 1er footer*/
+{
+	background-color: #F4F4F4;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	border-top: 1px solid #DCDCDC;
+}
+
+p /*mise en forme du texte (paragraphe) france*/
+{
+	font-size: 14px;
+	color: #808080;
+	margin-left: 20px;
+}
+
+footer nav /*mise en forme et alignement bloc 2eme footer*/
+{
+	background-color: #F4F4F4;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-top: 1px solid #DCDCDC;	
+}
+
+.nav_footer_left, .nav_footer_right /*alignement bloc droite et gauche du footer*/
+{
+	display: flex;
+	flex-direction: row;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+footer nav div a /*mise en forme du texte bloc droite et gauche 2eme footer*/
+{
+	text-decoration: none;
+	color: #4D4D4D;
+	margin: 0px 10px;
+}
+
+footer nav div a:hover /* mise en forme lors du survol des textes bloc droite et gauche du 2eme footer*/
+{
+	text-decoration: underline;
+} 
